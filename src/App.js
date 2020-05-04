@@ -6,17 +6,19 @@ const Contenedor = styled.div`
   display:flex;
   flex-direction:column;
   align-items:center;
-  padding-top:5rem;
+  padding:5rem;
+
 `
 const Boton = styled.button`
   background: -webkit-linear-gradient(top left, #007d35 0%, #007d35 40%, #0f574e 100%);
   background-size:300px;
   font-family:Arial, Helvetica, sans-serif;
   color:#fff;
-  margin-top:3rem;
+  margin-top:1rem;
   padding:1rem 3rem;
   font-size:2rem;
   border:2px solid black;
+  margin-top:10rem;
 `
 
 
@@ -37,20 +39,19 @@ function App() {
     setFrase(frase[0]);
   };
 
-
-
+  //useeffect para cargar una frase de menera automática
 
   return (
     <Contenedor>
-
+      <Frase
+        frase={frase}
+      />
       <Boton
         onClick={() => consultarAPI()}
       >
         Obtener frase
       </Boton>
-      <Frase
-        frase={frase}
-      />
+
     </Contenedor>
   );
 

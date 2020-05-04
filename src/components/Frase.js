@@ -30,7 +30,7 @@ const ContenedorFrase = styled.div`
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         font-size:1.4rem;
         font-weight:bold;
-        text-align:right;
+        text-align:center;
         color:#666;
         margin-top:2rem;
     }
